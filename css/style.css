@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: monospace;
+    background: #eeeeee;
+}
+
+.row {
+    width: 90%;
+    /*90*/
+    margin: 2% auto;
+    overflow: hidden;
+}
+
+.column {
+    background: lightsalmon;
+    float: left;
+    margin-right: 2%;
+    padding: 1em;
+    width: 100%;
+}
+
+/* small 480px up
+medium 768px up
+large 992px up */
+
