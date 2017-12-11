@@ -63,7 +63,7 @@ header {
 
 .button {
     background: #007bff;
-    padding: 7%;
+    padding: 1em;
     color: whitesmoke;
     text-decoration: none;
     font-size: 16px;
@@ -94,6 +94,8 @@ footer {
     font-size: 14px;
 }
 /* Mobile first */
+
+
     .total-image {
         height: 370px;
         background-size: cover;
@@ -106,7 +108,7 @@ footer {
         width: 20%;
     }
     .menu-icon {
-        display: inline-block;
+        display: block;
     }
     .total-image {
         height: 370px;
@@ -117,7 +119,7 @@ footer {
         font-weight: 300;
         font-size: 28px;
     }
-    .nav-bar ul{
+    .menu-nav {
         display: none;
     }
 
@@ -189,7 +191,7 @@ footer {
     }
     .sub-button {
         border-top: 1px solid #64707b;
-        padding: 5%;
+        padding: 1.5em 1.5em 1em 1.5em;
     }
 }
 
@@ -259,6 +261,6 @@ footer {
     }
     .sub-button {
         border-top: 1px solid #64707b;
-        padding: 5% ;
+        padding: 1.5em 1.5em 1em 1.5em;
     }
 }
