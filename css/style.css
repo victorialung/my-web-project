@@ -1,156 +1,266 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    background: #ffffff;
-    font-size: 16px;
-}
-
-header {
-    color: whitesmoke;
-    background-color: #343a40;
-}
-
-.menu-icon {
-    border-radius: 5%;
-    border: 2px solid #64707b;
-    background: #343a40;
-    text-align: center;
-    color: whitesmoke;
-}
-
-.menu-nav {
-    display: none;
-    list-style-type: none;
-}
-
-.menu-nav a {
-    color: whitesmoke;
-    border-radius: 5%;
-    text-align: center;
-    text-decoration: none;
-    padding: .5em;
-}
-
-.menu-nav li a:hover {
-    background-color: #555;
-    color: white;
-}
-
-.background-total {
-    background-image: url(../assets/img/michal-grosicki.jpg);
-}
-
-.background-total-two {
-    background-image: url(../assets/img/camille-couvez.jpg);
-}
-
-.background-total-three {
-    background-image: url(../assets/img/greg-rakozy.jpg);
-}
-
-.background-total-four {
-    background-image: url(../assets/img/blake-connally.jpg);
-}
-
-.email-contact {
-    text-decoration: none;
-    color: #007bff;
-}
-
-.button {
-    background: #007bff;
-    padding: 1em;
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.row {
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.column {
-    /* outline: 1px solid rgb(56, 198, 241); */
-    float: left;
-    padding: 1em;
-    width: 100%;
-}
-
-footer {
-    background: #343a40;
-    text-align: center;
-    color: whitesmoke;
-    padding: 1em;
-}
-
-.footer-title {
-    font-size: 14px;
-}
-
-
-/* Mobile first */
-
-.two-columns .header-logo {
-    width: 80%;
-}
-
-.two-columns .header-nav {
-    width: 20%;
-}
-
-.menu-icon {
-    display: block;
-}
-
-.total-image {
-    height: 370px;
-    background-size: cover;
-    background-position: center;
-}
-
-.logo-title {
-    font-weight: 300;
-    font-size: 28px;
-}
-
-/* Tablet */
-
-@media (min-width:768px) {
-    .two-columns .header-logo {
-        width: 55%;
-    }
-    .two-columns .header-nav {
-        width: 45%;
+        * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
 
-    .logo-title{
-        font-size: 30px;
-        padding: 0 0 0 3em;
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background: #ffffff;
+        font-size: 16px;
+    }
+
+    header {
+        color: whitesmoke;
+        background-color: #343a40;
+    }
+
+    .menu-icon {
+        border-radius: 5%;
+        border: 2px solid #64707b;
+        background: #343a40;
+        text-align: center;
+        color: whitesmoke;
     }
 
     .menu-nav {
-        display: inline-block;
-        padding-top: .5em;
-    }
-    .menu-nav li {
-        display: inline;
-    }
-    .menu-icon {
-        display: none;
+        list-style-type: none;
     }
 
-    .total-image {
-        height: 500px;
-        background-size: cover;
-        background-position: center;
+    .menu-nav a {
+        color: whitesmoke;
+        border-radius: 5%;
+        text-align: center;
+        text-decoration: none;
+        padding: .5em;
     }
-}
 
-@media (max-width:992px) {}
+    .menu-nav li a:hover {
+        background-color: #555;
+        color: white;
+    }
+
+    .background-total {
+        background-image: url(../assets/img/michal-grosicki.jpg);
+    }
+
+    .background-total-two {
+        background-image: url(../assets/img/camille-couvez.jpg);
+    }
+
+    .background-total-three {
+        background-image: url(../assets/img/greg-rakozy.jpg);
+    }
+
+    .background-total-four {
+        background-image: url(../assets/img/blake-connally.jpg);
+    }
+
+    .email-contact {
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    .button {
+        background: #007bff;
+        padding: 1em;
+        color: whitesmoke;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 6px;
+    }
+
+    .row {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .column {
+        /* outline: 1px solid rgb(56, 198, 241); */
+        float: left;
+        padding: 1em;
+        width: 100%;
+    }
+
+    footer {
+        background: #343a40;
+        text-align: center;
+        color: whitesmoke;
+        padding: 1em;
+    }
+
+    .footer-title {
+        font-size: 14px;
+    }
+    /* Mobile first */
+
+    @media (min-width:480px) {
+        .total-image {
+            height: 370px;
+            background-size: cover;
+            background-position: center;
+        }
+        .two-columns .header-logo {
+            width: 80%;
+        }
+        .two-columns .header-nav {
+            width: 20%;
+        }
+        .menu-icon {
+            display: block;
+        }
+        .total-image {
+            height: 370px;
+            background-size: cover;
+            background-position: center;
+        }
+        .logo-title {
+            font-weight: 300;
+            font-size: 28px;
+        }
+        .menu-nav {
+            display: none;
+        }
+    }
+    /* Tablet */
+
+    @media (min-width:768px) {
+        .two-columns .header-logo {
+            width: 55%;
+        }
+        .two-columns .header-nav {
+            width: 45%;
+        }
+        .logo-title {
+            font-size: 30px;
+            padding: 0 0 0 3em;
+        }
+        .menu-nav {
+            display: inline-block;
+            padding-top: .5em;
+        }
+        .menu-nav li {
+            display: inline;
+        }
+        .menu-icon {
+            display: none;
+        }
+        .background-total.total-image {
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+        }
+        .three-columns .content-one {
+            width: 60%;
+            text-align: left;
+            padding-left: 5em;
+        }
+        .three-columns .content-two {
+            width: 40%;
+            padding-right: 5em;
+        }
+        .total .content-button {
+            padding-left: 5em;
+        }
+        .row.three-columns {
+            padding: 2em 0;
+        }
+        .sub-three-columns.total-image {
+            height: 100px;
+            /* width: 300px; */
+            background-size: cover;
+            background-position: center
+        }
+        .row.total-sub {
+            padding: 2em 5em;
+        }
+        .sub-three-columns {
+            margin-right: 2%;
+        }
+        .column.sub-three-columns:nth-child(3n) {
+            margin-right: 0;
+        }
+        .sub-three-columns {
+            width: 32%;
+            border: 1px solid #64707b;
+            border-radius: 8px;
+        }
+        .content-sub {
+            padding: 1.5em 1.5em 1em 1.5em;
+        }
+        .sub-button {
+            border-top: 1px solid #64707b;
+            padding: 1.5em 1.5em 1em 1.5em;
+        }
+    }
+
+    @media (min-width:992px) {
+        .two-columns .header-logo {
+            width: 55%;
+        }
+        .two-columns .header-nav {
+            width: 45%;
+        }
+        .logo-title {
+            font-size: 30px;
+            padding: 0 0 0 3em;
+        }
+        .menu-nav {
+            display: inline-block;
+            padding-top: .5em;
+        }
+        .menu-nav li {
+            display: inline;
+        }
+        .menu-icon {
+            display: none;
+        }
+        .background-total.total-image {
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+        }
+        .three-columns .content-one {
+            width: 60%;
+            text-align: left;
+            padding-left: 5em;
+        }
+        .three-columns .content-two {
+            width: 40%;
+            padding-right: 5em;
+        }
+        .total .content-button {
+            padding-left: 5em;
+        }
+        .row.three-columns {
+            padding: 2em 0;
+        }
+        .sub-three-columns.total-image {
+            height: 100px;
+            /* width: 300px; */
+            background-size: cover;
+            background-position: center
+        }
+        .row.total-sub {
+            padding: 2em 5em;
+        }
+        .sub-three-columns {
+            margin-right: 2%;
+        }
+        .column.sub-three-columns:nth-child(3n) {
+            margin-right: 0;
+        }
+        .sub-three-columns {
+            width: 32%;
+            border: 1px solid #64707b;
+            border-radius: 8px;
+        }
+        .content-sub {
+            padding: 1.5em 1.5em 1em 1.5em;
+        }
+        .sub-button {
+            border-top: 1px solid #64707b;
+            padding: 1.5em 1.5em 1em 1.5em;
+        }
+    }
