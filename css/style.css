@@ -5,23 +5,31 @@
 }
 
 body {
-    font-family: monospace;
-    background: rgb(49, 46, 45);
+    font-family: 'Montserrat', sans-serif;
+    background: #ffffff;
+}
+
+header{
+    color: whitesmoke;
+    background-color: #343a40;
 }
 
 .menu-icon{
     border-radius: 5%;
-    background: lightblue;
+    border: 2px solid #64707b;
+    background: #343a40;
     text-align: center;
-    padding: 1%;
+    /* padding-right: 8%; */
     color: whitesmoke;
     display: none;
 }
 
+.menu-nav{
+    display:none;
+}
 
 .background-total{
     background-image: url(../assets/img/michal-grosicki.jpg);
-
 }
 
 .total-image{
@@ -32,7 +40,6 @@ body {
 
 .row {
     width: 90%;
-    /*90*/
     margin: 0 auto;
     overflow: hidden;
 }
@@ -40,8 +47,7 @@ body {
 .column {
     outline: 1px solid rgb(56, 198, 241);
     float: left;
-    /* margin-right: 2%; */
-    /* padding: 1em; */
+    padding: 1em;
     width: 100%;
 }
 
@@ -50,18 +56,24 @@ medium 768px up
 large 992px up */
 
 @media (max-width: 480px) {
-    .logo-title{
-        display: inline-block;
-        padding: .5em;
+
+    .two-columns .header-logo{
+        width: 80%;
     }
 
-    .nav-bar{
-        display:inline-block;
-        padding: .5em;
+    .two-columns .header-nav{
+        width: 20%;
+        padding: 4%;
     }
 
     .menu-icon{
-        display: inline-block;
+        display:block;
+    }
+
+    .total-image{
+        height: 350px;
+        background-size: cover;
+        background-position: center;
     }
 
 }
