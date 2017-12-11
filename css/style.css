@@ -7,73 +7,150 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background: #ffffff;
+    font-size: 16px;
 }
 
-header{
+header {
     color: whitesmoke;
     background-color: #343a40;
 }
 
-.menu-icon{
+.menu-icon {
     border-radius: 5%;
     border: 2px solid #64707b;
     background: #343a40;
     text-align: center;
-    /* padding-right: 8%; */
     color: whitesmoke;
+}
+
+.menu-nav {
     display: none;
+    list-style-type: none;
 }
 
-.menu-nav{
-    display:none;
+.menu-nav a {
+    color: whitesmoke;
+    border-radius: 5%;
+    text-align: center;
+    text-decoration: none;
+    padding: .5em;
 }
 
-.background-total{
+.menu-nav li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.background-total {
     background-image: url(../assets/img/michal-grosicki.jpg);
 }
 
-.total-image{
-    height: 400px;
-    background-size: cover;
-    background-position: center;
+.background-total-two {
+    background-image: url(../assets/img/camille-couvez.jpg);
+}
+
+.background-total-three {
+    background-image: url(../assets/img/greg-rakozy.jpg);
+}
+
+.background-total-four {
+    background-image: url(../assets/img/blake-connally.jpg);
+}
+
+.email-contact {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.button {
+    background: #007bff;
+    padding: 1em;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 16px;
 }
 
 .row {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
 }
 
 .column {
-    outline: 1px solid rgb(56, 198, 241);
+    /* outline: 1px solid rgb(56, 198, 241); */
     float: left;
     padding: 1em;
     width: 100%;
 }
 
-/* small 480px up
-medium 768px up
-large 992px up */
+footer {
+    background: #343a40;
+    text-align: center;
+    color: whitesmoke;
+    padding: 1em;
+}
 
-@media (max-width: 480px) {
+.footer-title {
+    font-size: 14px;
+}
 
-    .two-columns .header-logo{
-        width: 80%;
+
+/* Mobile first */
+
+.two-columns .header-logo {
+    width: 80%;
+}
+
+.two-columns .header-nav {
+    width: 20%;
+}
+
+.menu-icon {
+    display: block;
+}
+
+.total-image {
+    height: 370px;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo-title {
+    font-weight: 300;
+    font-size: 28px;
+}
+
+/* Tablet */
+
+@media (min-width:768px) {
+    .two-columns .header-logo {
+        width: 55%;
+    }
+    .two-columns .header-nav {
+        width: 45%;
     }
 
-    .two-columns .header-nav{
-        width: 20%;
-        padding: 4%;
+    .logo-title{
+        font-size: 30px;
+        padding: 0 0 0 3em;
     }
 
-    .menu-icon{
-        display:block;
+    .menu-nav {
+        display: inline-block;
+        padding-top: .5em;
+    }
+    .menu-nav li {
+        display: inline;
+    }
+    .menu-icon {
+        display: none;
     }
 
-    .total-image{
-        height: 350px;
+    .total-image {
+        height: 500px;
         background-size: cover;
         background-position: center;
     }
-
 }
+
+@media (max-width:992px) {}
